@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        #s1 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #1E88E5;
+        }
+
+        #s2 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #673ab7;
+        }
+
+        #s3 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #ff9800;
+        }
+
+        #s4 {
+            padding-top: 50px;
+            height: 500px;
+            color: #fff;
+            background-color: #00bcd4;
+        }
+
+        /* background image */
+        .bgimg-1 {
+            background-image: url("images/projectwater.jpg");
+            height: 100%;
+            opacity: 1;
+        }
+
+        .bgimg-2 {
+            background-image: url("images/bg.jpg");
+            height: 100%;
+            opacity: 1;
+        }
+        /* captions for bckground */
+                                    
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+            .caption span.border {
+                background-color: #111;
+                color: #fff;
+                padding: 18px;
+                font-size: 25px;
+                letter-spacing: 10px;
+            }
+
+
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">NA PW</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#s1">2018</a></li>
+                        <li><a href="#s2">2017</a></li>
+                        <li><a href="#s3">2016</a></li>
+                        <li><a href="#s4">2015</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="s1" class="container-fluid bg-img-1">
+        <h1>2018</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="s2" class="container-fluid">
+        <h1>2017</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="s3" class="container-fluid">
+        <h1>2016</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div id="s4" class="container-fluid">
+        <h1>2015</h1>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+
+    <!-- Scrolling Script -->
+    <script>
+    $(document).ready(function () {
+        $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+        $("#myNavbar a").on('click', function (event) {
+
+            if (this.hash !== "") {
+
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>
