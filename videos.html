@@ -7,53 +7,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Alton Plugin -->
+    <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
+
+
     <style>
         body {
             position: relative;
         }
-
-        #s1 {
-            padding-top: 50px;
-            height: 500px;
-            color: #fff;
-            background-color: #1E88E5;
-        }
-
-        #s2 {
-            padding-top: 50px;
-            height: 500px;
-            color: #fff;
-            background-color: #673ab7;
-        }
-
-        #s3 {
-            padding-top: 50px;
-            height: 500px;
-            color: #fff;
-            background-color: #ff9800;
-        }
-
-        #s4 {
-            padding-top: 50px;
-            height: 500px;
-            color: #fff;
-            background-color: #00bcd4;
-        }
-
         /* background image */
         .bgimg-1 {
-            background-image: url("images/projectwater.jpg");
+            background-image: url("images/logoPW.jpg");
             height: 100%;
             opacity: 1;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 1000;
         }
 
         .bgimg-2 {
-            background-image: url("images/bg.jpg");
+            background-image: url("images/stock1.jpg");
             height: 100%;
             opacity: 1;
         }
         /* captions for bckground */
-                                    
+
         .caption {
             position: absolute;
             left: 0;
@@ -70,79 +49,41 @@
                 font-size: 25px;
                 letter-spacing: 10px;
             }
-
-
     </style>
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="pageWrapper">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">NA PW</a>
-            </div>
-            <div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#s1">2018</a></li>
-                        <li><a href="#s2">2017</a></li>
-                        <li><a href="#s3">2016</a></li>
-                        <li><a href="#s4">2015</a></li>
-                    </ul>
-                </div>
-            </div>
+    <section class="full">
+        <div class="slide">
+            <h2 class="videoDescription">Introducing 2018 NA Dodgeball</h2>
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/2XPZ1hID85Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
-    </nav>
 
-    <div id="s1" class="container-fluid bg-img-1">
-        <h1>2018</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="s2" class="container-fluid">
-        <h1>2017</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="s3" class="container-fluid">
-        <h1>2016</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-    <div id="s4" class="container-fluid">
-        <h1>2015</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-
-    <!-- Scrolling Script -->
-    <script>
-    $(document).ready(function () {
-        $('body').scrollspy({ target: ".navbar", offset: 50 });
-
-        $("#myNavbar a").on('click', function (event) {
-
-            if (this.hash !== "") {
-
-                event.preventDefault();
-
-                var hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-    </script>
+        <div class="slide">
+            <br />
+            <h2 class="videoDescription">2017 Dodgeball Tournament Highlights</h2>
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/0Aj_bRER5WY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <!--
+        <div class="slide">
+            <h2 class="videoDescription">Introducing Project Water</h2>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/qoPTc2RQrVY?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+        </div>
+        <div class="slide">
+            <h2 class="videoDescription">Introducing the 2017 Dodgeball Tournament</h2>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/EYeKDpXzaCw?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+        </div>
+        <div class="slide">
+            <h2 class="videoDescription">Introducing NAI Dodgeball Tournament 3</h2>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/jqdeunM31qs?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+        </div>
+        <div class="slide">
+            <h2 class="videoDescription">NAI Dodgeball Music Video</h2>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/dSIgjMxWEd0?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+        </div>
+            -->
+    </section>
+    <!-- Alton script-->
 </body>
 </html>

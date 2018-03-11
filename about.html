@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>About NA PW</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:bold&effect=anaglyph" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Implementing Alton Plugin-->
+    <script text="text/javascipt" src="scripts/alton/jquery.alton.min.js"></script>
+    <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
+    <link type="text/css" rel="stylesheet" href="mainss.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style type="text/css">
+        h1 {
+            font-family: "brandon-grotesque",sans-serif;
+            line-height: 1.05em;
+            font-size: 3em;
+            font-weight: bolder;
+            margin: 0;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+        }
+
+        li.menu {
+            font-size: 24px;
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        .active {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style=" min-height: 2000px; padding-top: 70px;">
+    <div class="w3-container w3-center w3-animate-opacity">
+        <!-- Header stuff-->
+        <header></header>
+        <section class="header">
+        <!-- Nav bar-->
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:aqua;">
+
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        NA Project Water
+                        <!--<img src="images/logoPW.jpg"/>-->
+                    </a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li class="menu active"><a href="index.html">Home </a></li>
+                        <li class="menu"><a href="about.html">About</a></li>
+                        <li class="menu"><a href="contact">Contact</a></li>
+                        <li class="menu"><a href="dodgeball_regis.html"><b>DODGEBALL</b></a></li>
+                        <li class="menu"><a href="info.html">MORE INFO</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="videos.html#s1">2018</a></li>
+                                <li><a href="videos.html#s2">2017</a></li>
+                                <li><a href="videos.html#s3">2016</a></li>
+                                <li><a href="videos.html#s4">2015</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            </section>
+        <!-- End of nav bar-->
+        <section class="full">
+            <div class="slide" style="background-image: url(images/stock1.jpg); background-size: cover;"><h1>We are a student-led group aiming to raise money for clean water.</h1></div>
+            <div class="slide">Bye</div>
+            <div class="slide">jiwfe</div>
+        </section>
+        <script>
+            $(document).alton({
+                fullSlideContainer: 'full', // Tell Alton the full height container
+                singleSlideClass: 'slide', // Tell Alton the full height slide class
+                useSlideNumbers: true, // Set to false if you don't want to use pagination
+                slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
+                slideNumbersColor: 'transparent', // Set the inner color of the pagination items
+                bodyContainer: 'pageWrapper', // Tell Alton the body class
+            });
+        </script>
+    </div>
+</body>
+</html>
