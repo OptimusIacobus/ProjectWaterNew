@@ -38,6 +38,16 @@
         .active {
             background-color: aqua;
         }
+		
+		/* parallax stuff */
+		.parallax-window{
+			min-height: 100vh;
+			width: 100%;
+			opacity: 50%;
+			background-image: url(images/stock1.jpg);
+			background-size: cover;
+		}
+		
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style=" min-height: 2000px; padding-top: 70px;">
@@ -88,7 +98,17 @@
             </div>
         </nav>
             </section>
+			
         <!-- End of nav bar-->
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock1.jpg"></div>
+		<div class="window"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock2.jpg"></div>
+		<div class="window"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock3.jpg"></div>
+		<div class="window"></div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock4.jpg"></div>
+		<div class="window"></div>
+		<!--
         <section class="full">
             <div class="slide" style="background-image: url(images/stock1.jpg); background-size: cover;"><h1>We are a student-led group aiming to raise money for clean water.</h1></div>
             <div class="slide">Bye</div>
@@ -103,7 +123,7 @@
                 slideNumbersColor: 'transparent', // Set the inner color of the pagination items
                 bodyContainer: 'pageWrapper', // Tell Alton the body class
             });
-        </script>
+        </script>-->
     </div>
 </body>
 </html>
