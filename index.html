@@ -16,11 +16,17 @@
     <!--<link type="text/css" rel="stylesheet" href="mainss.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="styleseet" href="parralax.css" />
+ 
     <!--Alton Plugin -->
     <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
     <script text="text/javascipt" src="scripts/alton/jquery.alton.min.js"></script>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
         body,
         html {
             height: 100%;
@@ -35,12 +41,77 @@
             font-weight: bold;
         }
 
+        /*parallax effect*/
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0px;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            position: relative;
+            opacity: 0.65;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1 {
+            background-image: url("images/stock1.jpg");
+            background-size: 100% 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("images/stock2.jpg");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("images/stock3.jpg");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+                background-color: #111;
+                color: #fff;
+                padding: 30px;
+                font-size: 25px;
+                letter-spacing: 10px;
+                text-align: center;
+            }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1, .bgimg-2, .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
     </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50" style="min-height: 2000px; padding-top: 70px;" class="pageWrapper">
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="min-height: 2000px; padding-top: 100px" class="pageWrapper">
     <div class="w3-container w3-animate-opacity">
         <!-- Header stuff-->
-        <header class="header" style="height:500px;">
+        <header class="header" style="height:100px;">
             <!-- Nav bar-->
             <nav class="navbar navbar-default navbar-fixed-top" style="background-color:aqua;">
 
@@ -53,14 +124,15 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">
+              
                             NA Project Water
-                            <!--<img src="images/logoPW.jpg"/>-->
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <a href="/" class="navbar-left"><img src="images/logoPW.jpg" width="2%" height="300%" style="margin-top: -10px"></a>
+                            </div>
                         </a>
                     </div>
 
-                    <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-
                             <li class="menu active"><a href="index.html">Home </a></li>
                             <li class="menu"><a href="about.html">About</a></li>
                             <li class="menu"><a href="contact">Contact</a></li>
@@ -87,17 +159,19 @@
             <!-- Title -->
             <div style="font-size:32px;color:black;text-shadow: 0px 0px 10px black">
                 <p style="font-family: 'Quicksand'">
-                    <h2><b><br /><br /><br />North Allegheny PROJECT WATER</b></h2>
+                    <h2><b>North Allegheny PROJECT WATER</b></h2>
                 </p>
             </div>
         </header>
 
 
         <!-- Actual Content-->
-        <div>
-        <h1>NA Project Water seeks to help raise money to buy clean water for third-world countries.</h1></div>
-
+        <div class="bgimg-1" style="height:100vh">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:40px;color: #f7f7f7;font-weight:bold">NA Project Water seeks to help raise money to buy clean water for third-world countries.</span>
+            </div>
         </div>
+
         <!--
           <div class="btn-group btn-group-lg">
                     <a href="https://www.google.com" class="btn btn-primary btn-lg" role="button">Primary link</a>
