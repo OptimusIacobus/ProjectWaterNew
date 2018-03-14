@@ -1,20 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
+    <title>PACF Contest: NA PW</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:bold&effect=anaglyph" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="mainss.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- Alton Plugin -->
     <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
 
 
     <style>
-        body {
-            position: relative;
-        }
         /* background image */
         .bgimg-1 {
             background-image: url("images/logoPW.jpg");
@@ -49,41 +56,86 @@
                 font-size: 25px;
                 letter-spacing: 10px;
             }
+
+        #s1 {
+            padding-top: 50px;
+
+            color: #fff;
+            background-color: #1E88E5;
+        }
+
+        #s2 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: #673ab7;
+        }
+
+        #s3 {
+            padding-top: 50px;
+            color: #fff;
+            background-color: #ff9800;
+        }
+
     </style>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="pageWrapper">
-
+    <div class=""w3-container w3-center w3-animate-opacity">
+    <!-- Header stuff-->
+    <!-- Nav bar-->
+    <nav class="navbar navbar-light bg-light navbar-fixed-top" style="background-color:#7FDBFF">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logoPW.jpg" width="80vh" height="80vh" /></a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active"><a href="index.html">HOME </a></li>
+                    <li class="nav-item"><a href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a href="dodgeball_regis.html"><b>DODGEBALL</b></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEOS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videos.html#s1">2018</a></li>
+                            <li><a href="videos.html#s2">2017</a></li>
+                            <li><a href="videos.html#s3">2016</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of nav bar-->
+    <br /><br /><br />
     <section class="full">
-        <div class="slide">
+        <div class="slide" id="s1">
             <h2 class="videoDescription">Introducing 2018 NA Dodgeball</h2>
-            <iframe width="100%" height="800" src="https://www.youtube.com/embed/2XPZ1hID85Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube.com/embed/2XPZ1hID85Q" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
         </div>
 
-        <div class="slide">
+        <div class="slide" id="s2">
             <br />
             <h2 class="videoDescription">2017 Dodgeball Tournament Highlights</h2>
-            <iframe width="100%" height="800" src="https://www.youtube.com/embed/0Aj_bRER5WY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube.com/embed/0Aj_bRER5WY" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+
         </div>
-        <!--
-        <div class="slide">
-            <h2 class="videoDescription">Introducing Project Water</h2>
-            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/qoPTc2RQrVY?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
-        </div>
-        <div class="slide">
-            <h2 class="videoDescription">Introducing the 2017 Dodgeball Tournament</h2>
-            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/EYeKDpXzaCw?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
-        </div>
-        <div class="slide">
-            <h2 class="videoDescription">Introducing NAI Dodgeball Tournament 3</h2>
+        <div class="slide" id="s3">
+            <h2 class="videoDescription">Introducing NAI Dodgeball Tournament 3 (2016)</h2>
             <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/jqdeunM31qs?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
         </div>
-        <div class="slide">
-            <h2 class="videoDescription">NAI Dodgeball Music Video</h2>
-            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/dSIgjMxWEd0?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
-        </div>
-            -->
+        
+        <div>
+               All videos produced by Nikhil Behari et. al., granted permission.
+            </div>
     </section>
-    <!-- Alton script-->
+        </div>
+    <footer class="footer" style="text-align: center; color:grey; height:500px;">
+        <br /><br /><br />
+        <hr> &copy 2018 Jacob Pan. <br> <a href="credits.html">Credits</a>
+    </footer>
 </body>
 </html>

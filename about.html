@@ -1,34 +1,22 @@
-<html>
+﻿<html>
 <head>
-    <title>About NA PW</title>
+    <title>PACF Contest: NA PW</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:bold&effect=anaglyph" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Implementing Alton Plugin-->
-    <script text="text/javascipt" src="scripts/alton/jquery.alton.min.js"></script>
-    <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
     <link type="text/css" rel="stylesheet" href="mainss.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-
     <style type="text/css">
-        h1 {
-            font-family: "brandon-grotesque",sans-serif;
-            line-height: 1.05em;
-            font-size: 3em;
-            font-weight: bolder;
-            margin: 0;
-            text-transform: uppercase;
-            padding-bottom: 30px;
-        }
-
         li.menu {
             font-size: 24px;
             background-color: aqua;
@@ -38,16 +26,52 @@
         .active {
             background-color: aqua;
         }
-		
-		/* parallax stuff */
-		.parallax-window{
-			min-height: 100vh;
-			width: 100%;
-			opacity: 50%;
-			background-image: url(images/stock1.jpg);
-			background-size: cover;
+
+        /* parallax stuff */
+        .parallax {
+            position: relative;
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 30%;
+            width: 100%;
+            text-align: center;
+            font-family: "Helvetica Neue Bold";
+        }
+
+            .caption span.border {
+                background-color: #111;
+                padding: 30px;
+                font-size: 25px;
+                letter-spacing: 10px;
+                text-align: center;
+            }
+
+		.statistic {
+            margin: 1em 0;
+            text-transform: uppercase;
+            display: inline-block;
 		}
-		
+        .value {
+            font-size: 50px;
+            line-height: 1em;
+            text-align: center;
+        }
+        .label {
+            color: inherit;
+            display: block;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style=" min-height: 2000px; padding-top: 70px;">
@@ -55,75 +79,84 @@
         <!-- Header stuff-->
         <header></header>
         <section class="header">
-        <!-- Nav bar-->
-        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:aqua;">
+                <!-- Header stuff-->
+                <!-- Nav bar-->
+                <nav class="navbar navbar-light bg-light navbar-fixed-top" style="background-color:#7FDBFF">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="images/logoPW.jpg" width="80vh" height="80vh" /></a>
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item active"><a href="index.html">HOME </a></li>
+                                <li class="nav-item"><a href="about.html">ABOUT</a></li>
+                                <li class="nav-item"><a href="dodgeball_regis.html"><b>DODGEBALL</b></a></li>
 
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                        NA Project Water
-                        <!--<img src="images/logoPW.jpg"/>-->
-                    </a>
-                </div>
-
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-
-                        <li class="menu active"><a href="index.html">Home </a></li>
-                        <li class="menu"><a href="about.html">About</a></li>
-                        <li class="menu"><a href="contact">Contact</a></li>
-                        <li class="menu"><a href="dodgeball_regis.html"><b>DODGEBALL</b></a></li>
-                        <li class="menu"><a href="info.html">MORE INFO</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="videos.html#s1">2018</a></li>
-                                <li><a href="videos.html#s2">2017</a></li>
-                                <li><a href="videos.html#s3">2016</a></li>
-                                <li><a href="videos.html#s4">2015</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEOS<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="videos.html#s1">2018</a></li>
+                                        <li><a href="videos.html#s2">2017</a></li>
+                                        <li><a href="videos.html#s3">2016</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End of nav bar-->
+</section>
+
+	    <div class="parallax" data-parallax="scroll" style="background-size: 80% 100%; background-image:url(images/logoPW_original.jpg);">
+            <div class="caption" style="font-size: 80px; color:dimgrey">
+                North Allegheny School District's Project Water was initated by the National Junior Honors Society in 2014, and has developed into an independent organization designed to support identified needs of
+                developing villages in Africa around the world.
+            </div>
+        </div>
+
+        <div class="parallax" data-parallax="scroll" style="background-size: 100% 70%; background-image: url(images/organizations.jpg);">
+            <div class="caption" style="font-size: 80px; color:black">
+                Sponsored with World Vision and the Heart For Uganda, North Allegheny PW is able to make a true impact on those in developing villages.
+                <br />
+                <h5>World Vision and the World Vision logo are licensed trademarks of World Vision.</h5>
+            </div>
+        </div>
+        <div class="parallax" data-parallax="scroll" style="background-size: 60% 70%; background-image: url(images/team.jpg);">
+            <div class="caption" style="font-size: 80px; color: burlywood">
+                Our team is a youthful, energetic, and passionate group that is commited to the cause of clean water. We have 2 different teams - 1 for the senior high school and 1 for the intermediate (9 and 10) high school (which is shown below)
+            </div>
+        </div>
+        <div>
+            <h1> As of now, the 2018 year has (all approximate values): </h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="statistic">
+                        <div class="value">146</div>
+                        <div class="label">Teams registered</div>
+                    </div>
+                    <div class="statistic">
+                        <div class="value">930</div>
+                        <div class="label">Kids registered</div>
+                    </div>
+                    <div class="statistic">
+                        <div class="value">$31,200</div>
+                        <div class="label">Much Money Raised</div>
+                    </div>
                 </div>
             </div>
-        </nav>
-            </section>
-			
-        <!-- End of nav bar-->
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock1.jpg"></div>
-		<div class="window"></div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock2.jpg"></div>
-		<div class="window"></div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock3.jpg"></div>
-		<div class="window"></div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/stock4.jpg"></div>
-		<div class="window"></div>
-		<!--
-        <section class="full">
-            <div class="slide" style="background-image: url(images/stock1.jpg); background-size: cover;"><h1>We are a student-led group aiming to raise money for clean water.</h1></div>
-            <div class="slide">Bye</div>
-            <div class="slide">jiwfe</div>
-        </section>
-        <script>
-            $(document).alton({
-                fullSlideContainer: 'full', // Tell Alton the full height container
-                singleSlideClass: 'slide', // Tell Alton the full height slide class
-                useSlideNumbers: true, // Set to false if you don't want to use pagination
-                slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
-                slideNumbersColor: 'transparent', // Set the inner color of the pagination items
-                bodyContainer: 'pageWrapper', // Tell Alton the body class
-            });
-        </script>-->
-    </div>
+        </div>
+        <div class="slide">
+            <h2 class="videoDescription">Introducing Project Water</h2>
+            <div class="embed-responsive embed-responsive-16by9"><embed id="video" src="https://www.youtube-nocookie.com/embed/qoPTc2RQrVY?theme=light&rel=0&autoplay=0&showinfo=0&origin=https://naprojectwater.com" frameborder="0" allowfullscreen class="embed-responsive-item"></div>
+        </div>
+    <footer class="footer" style="text-align: center; color:grey; height:500px;">
+        <br /><br /><br />
+        <hr> &copy 2018 Jacob Pan. <br> <a href="credits.html">Credits</a>
+    </footer>
+        </div>
 </body>
 </html>

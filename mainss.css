@@ -2,3 +2,68 @@
     font-family: "Helvetica Neue Bold";
     src: url("fonts/HelveticaNeueCondensed.otf") format("opentype");
 }
+* {
+    padding: 0;
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #111;
+}
+
+/*navbar content*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font: 400 15px/1.8;
+}
+/* Nav bar content */
+li.nav-item {
+    font-size: 50px;
+    font-family: "Helvetica Neue Bold";
+    background-color: #7FDBFF;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    height: 80px;
+}
+
+.nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+
+.dropdown-toggle {
+    font-size: 50px;
+    font-family: "Helvetica Neue Bold";
+    background-color: #7FDBFF;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.dropdown-menu {
+    font-size: 30px;
+    font-family: "Helvetica Neue Bold";
+    background-color: #7FDBFF;
+    font-weight: bold;
+    color: aliceblue;
+}
+a {
+    color: cornflowerblue;
+}

@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <head>
     <title>PACF Contest: NA PW</title>
     <meta charset="UTF-8">
@@ -17,60 +16,13 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!--Alton Plugin -->
-    <script type="text/javascript" src="scripts/alton/jquery.alton.js"></script>
-    <script text="text/javascipt" src="scripts/alton/jquery.alton.min.js"></script>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
-
-        /*navbar content*/
-
-        li.nav-item {
-            font-size: 50px;
-            font-family: "Helvetica Neue Bold";
-            background-color: #7FDBFF;
-            font-weight: bold;
-        }
-        .navbar-brand{
-            padding-top:0;
-            height: 80px;
-        }
-        .nav > li > a {
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .navbar-toggle {
-            padding: 10px;
-            margin: 25px 15px 25px 0;
-        }
 
         /*parallax effect*/
 
-        body, html {
-            height: 100%;
-            margin: 0;
-            padding: 0px;
-            font: 400 15px/1.8 "Lato", sans-serif;
-            color: #777;
-        }
-
         .bgimg-1, .bgimg-2, .bgimg-3 {
             position: relative;
-            opacity: 0.65;
+            opacity: 0.85;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -83,8 +35,8 @@
         }
 
         .bgimg-2 {
-            background-image: url("images/stock2.jpg");
-            min-height: 400px;
+            background-image: url("images/stock7.png");
+            background-size: 100% 70%;
         }
 
         .bgimg-3 {
@@ -95,15 +47,14 @@
         .caption {
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 30%;
             width: 100%;
             text-align: center;
-            color: #000;
+            font-family: "Helvetica Neue Bold";
         }
 
             .caption span.border {
                 background-color: #111;
-                color: #fff;
                 padding: 30px;
                 font-size: 25px;
                 letter-spacing: 10px;
@@ -123,6 +74,12 @@
                 background-attachment: scroll;
             }
         }
+        .progress{
+            height: 70px;
+        }
+        .progress-bar{
+            line-height: 90px;
+        }
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="min-height: 2000px; padding-top: 70px" class="pageWrapper">
@@ -138,24 +95,17 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="images/logoPW.jpg" width="80vh" height="80vh" /></a>
+                        <a class="navbar-brand" href="index.html"><img src="images/logoPW.jpg" width="80vh" height="80vh" /></a>
                         <ul class="nav navbar-nav">
-                            <li class="nav-item active"><a href="index.html">Home </a></li>
-                            <li class="nav-item"><a href="about.html">About</a></li>
-                            <li class="nav-item"><a href="contact">Contact</a></li>
+                            <li class="nav-item active"><a href="index.html">HOME </a></li>
+                            <li class="nav-item"><a href="about.html">ABOUT</a></li>
                             <li class="nav-item"><a href="dodgeball_regis.html"><b>DODGEBALL</b></a></li>
-                            <li class="nav-item"><a href="info.html">MORE INFO</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Videos <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEOS<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="videos.html#s1">2018</a></li>
                                     <li><a href="videos.html#s2">2017</a></li>
                                     <li><a href="videos.html#s3">2016</a></li>
-                                    <li><a href="videos.html#s4">2015</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Nav header</li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -164,27 +114,49 @@
             </nav>
             <!-- End of nav bar-->
             <!-- Title -->
-            <div style="font-size:32px;color:black;text-shadow: 0px 0px 10px black">
-                <p style="font-family: 'Quicksand'">
-                    <h2><b>North Allegheny PROJECT WATER</b></h2>
-                </p>
+            <div class="container" align="center"  >
+                <img src="images/titleimage.jpg" width="1200" height="421" />
+                <div align="center" style="font-family: 'Helvetica Neue Bold'; font-size: 100px; font-weight:bold">
+                    MARCH 28, 2018
+                </div>
             </div>
+        <br /><br /><br />
+        <div class="progress" align="center">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width:72%;">
+                <h2>$36,000/$50,0000 raised</h2>
+            </div>
+
+        </div>
+        Last updated March 14, 2018.
 
 
         <!-- Actual Content-->
-        <div class="bgimg-1" style="height:100vh">
+        <div class="bgimg-1" style="height:100vh;">
             <div class="caption">
-                <span class="border" style="background-color:transparent;font-size:40px;color: #f7f7f7;font-weight:bold">NA Project Water seeks to help raise money to buy clean water for third-world countries.</span>
+                <span class="border" style="background-color:transparent;font-size:80px;color: #000; font-weight:bold">
+                NA Project Water is a student-run non-profit that seeks to raise money to get clean water for third-world countries.</span>
             </div>
         </div>
-
-        <!--
-          <div class="btn-group btn-group-lg">
-                    <a href="https://www.google.com" class="btn btn-primary btn-lg" role="button">Primary link</a>
-                </div>-->
+        <div class="bgimg-2" style="height:80vh">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:70px;color: #00ff90; font-weight:bold">
+                    The group raises money by hosting a dodgeball tournament and is sponsored by various companies.<br />
+                    <a href="sponsors.html"> See various companies here.</a>
+                </span>
+            </div>
+        </div>
+        <br />
+        <div style="font-size:150px; font-family: 'Trebuchet MS'; font-weight: 600" align="center">
+            <i>GET READY TO PLAY</i>
+            <div class="slide">
+            <iframe width="100%" height="800" src="https://www.youtube.com/embed/2XPZ1hID85Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <br />
+            <a class="btn btn-primary btn-lg" href="https://nadodgeball.com/" role="button" style="font-family:'Helvetica Neue Bold'; font-size: 60px; width: 50vh; height: 20vh; padding-top: 70px">REGISTER</a>
+        </div>
         <footer class="footer" style="text-align: center; color:grey; height:500px;">
             <br /><br /><br />
-            <hr> &copy 2018 Alex Liao and Jacob Pan. <br>
+            <hr> &copy 2018 Jacob Pan. <br> <a href="credits.html">Credits</a>
         </footer>
     </div>
 </body>
