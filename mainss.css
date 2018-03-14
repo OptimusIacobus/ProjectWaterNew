@@ -1,22 +1,4 @@
-ul.list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-li.list {
-    float: left;
-}
-
-li a.list {
-    display: block;
-    text-align: center;
-    padding: 16px 16px;
-    background-color: white;
-}
-
-li a:hover.list {
-    background-color: black;
-    color: white;
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: url("fonts/HelveticaNeueCondensed.otf") format("opentype");
 }
